@@ -3,10 +3,10 @@
  */
 
 var config = {
-    entry: './js/src/app.jsx',
+    entry: './js/src/index.jsx',
 
     output: {
-        filename: './js/dist/app.js',
+        filename: './js/dist/index.js'
     },
 
     devServer: {

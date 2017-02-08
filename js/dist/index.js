@@ -9459,34 +9459,111 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Created by pedram on 08/02/17.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Dummy = function (_React$Component) {
-    _inherits(Dummy, _React$Component);
+var App = function (_React$Component) {
+    _inherits(App, _React$Component);
 
-    function Dummy() {
-        _classCallCheck(this, Dummy);
+    function App() {
+        _classCallCheck(this, App);
 
-        return _possibleConstructorReturn(this, (Dummy.__proto__ || Object.getPrototypeOf(Dummy)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
     }
 
-    _createClass(Dummy, [{
-        key: 'render',
+    _createClass(App, [{
+        key: "render",
         value: function render() {
             return _react2.default.createElement(
-                'div',
-                null,
-                'Hello World!!!'
+                "div",
+                { className: "mdl-layout mdl-js-layout mdl-layout--fixed-header" },
+                _react2.default.createElement(
+                    "header",
+                    { className: "mdl-layout__header" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "mdl-layout__header-row" },
+                        _react2.default.createElement(
+                            "span",
+                            { className: "mdl-layout-title" },
+                            "Title"
+                        ),
+                        _react2.default.createElement("div", { className: "mdl-layout-spacer" }),
+                        _react2.default.createElement(
+                            "nav",
+                            { className: "mdl-navigation mdl-layout--large-screen-only" },
+                            _react2.default.createElement(
+                                "a",
+                                { className: "mdl-navigation__link", href: "" },
+                                "Link"
+                            ),
+                            _react2.default.createElement(
+                                "a",
+                                { className: "mdl-navigation__link", href: "" },
+                                "Link"
+                            ),
+                            _react2.default.createElement(
+                                "a",
+                                { className: "mdl-navigation__link", href: "" },
+                                "Link"
+                            ),
+                            _react2.default.createElement(
+                                "a",
+                                { className: "mdl-navigation__link", href: "" },
+                                "Link"
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "mdl-layout__drawer" },
+                    _react2.default.createElement(
+                        "span",
+                        { className: "mdl-layout-title" },
+                        "Title"
+                    ),
+                    _react2.default.createElement(
+                        "nav",
+                        { className: "mdl-navigation" },
+                        _react2.default.createElement(
+                            "a",
+                            { className: "mdl-navigation__link", href: "" },
+                            "Link"
+                        ),
+                        _react2.default.createElement(
+                            "a",
+                            { className: "mdl-navigation__link", href: "" },
+                            "Link"
+                        ),
+                        _react2.default.createElement(
+                            "a",
+                            { className: "mdl-navigation__link", href: "" },
+                            "Link"
+                        ),
+                        _react2.default.createElement(
+                            "a",
+                            { className: "mdl-navigation__link", href: "" },
+                            "Link"
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    "main",
+                    { className: "mdl-layout__content" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "page-content" },
+                        "Page content will go here"
+                    )
+                )
             );
         }
     }]);
 
-    return Dummy;
+    return App;
 }(_react2.default.Component);
 
-exports.default = Dummy;
+exports.default = App;
 
 /***/ }),
 /* 81 */
@@ -21743,13 +21820,13 @@ var _reactDom = __webpack_require__(81);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _dummy = __webpack_require__(80);
+var _app = __webpack_require__(80);
 
-var _dummy2 = _interopRequireDefault(_dummy);
+var _app2 = _interopRequireDefault(_app);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_react2.default.createElement(Dummy, null), document.getElementById('app'));
+_reactDom2.default.render(_react2.default.createElement(_app2.default, null), document.getElementById('app'));
 
 /***/ })
 /******/ ]);
