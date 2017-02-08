@@ -1,0 +1,17 @@
+{
+  "name": "ttssharif",
+  "description": "",
+  "main": "./dist/app.js",
+  "authors": [
+    "pedram.esmaeeli@gmail.com"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ttssharif/ttssharif.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
